@@ -18,43 +18,56 @@
       alert("But we're virtual friends now..let's play?"); //again...not creepy at all
       console.log("Is Ready: " + !playgame);
     }
-    //Question 1 of game
+    //Question 1 of game: answer is CANCEL
     playgame = confirm("Was the shortest war in history 39 minutes?");
     console.log("Shortest war 39 minutes? " + playgame);
     if (playgame) {
       alert("Sorry! It was 38 minutes.\n It's okay, let's move on!");
       console.log("Is Ready for 2: " + playgame);
-      score += 1;
     } else {
       alert("Correcto! It was 38 minutes.\n Ready for question 2?");
       console.log("Is Ready for 2: " + !playgame);
+      score += 1;
     }
-    //Question 2 of game
+    //Question 2 of game: answer is CANCEL
     playgame = confirm("Alchemy Code Lab is the first school I attended since High School?");
     console.log("Alchemy?: " + playgame);
     if (playgame) {
       alert("Darn, it's actually the 6th! Let's go for the last question!");
       console.log("Is Ready for 3: " + playgame);
-      score += 1;
     } else {
       alert("You got it! I've had my run on different schools. Get ready for the last question!");
       console.log("Is Ready for 3: " + !playgame);
+      score += 1;
     }
     //Question 3 of game
     playgame = confirm("Do I want to do workshops to introduce kids to tech?");
     console.log("Kid Workshops: " + playgame);
+
     if (playgame) {
       alert("Yeeea! I do want to introduce kids from my neighborhood back home into tech!");
       score += 1;
       alert("Okay, let's see how you did...");
       console.log("Ready for score: " + playgame);
-      alert("You got " + score + "out of 3 right!");
+      alert("You got " + score + " out of 3 right!");
     } else {
       alert("Incorrect. I definitely want to introcude tech to the kids back home.");
       alert("Okay, let's see how you did...");
       console.log("Ready for score: " + !playgame);
-      alert("You got " + score + "out of 3 right!");
+      alert("You got " + score + " out of 3 right!");
     }
+    //Respond to the score
+    if (score === 3) {
+      alert("Wow! You paid attention! Fantanstic!");
+    } else if (score === 2) {
+      alert("Not bad young grasshopper!");
+    } else if (score === 1) {
+      alert("1 is better than none!");
+    } else {
+      alert("Womp womp...looks like you didn't get any right. Better luck next time!");
+    }
+    console.log("Final Score: " + score);
+
 
     </script>
   </head>
