@@ -8,26 +8,40 @@
     console.log("User Name: "+newFriend);
     alert("Welcome to my page, " + newFriend + "! Want to be virtual friends?");
     var score = 0
-    //Question 1
+    //Lets play game Question?
     var playgame = confirm("Now that you've read my page " +newFriend+", want to play a game to see what you remember?");
     console.log("Wants to play: " + playgame);
     if (playgame) {
-      playgame = confirm("Yay! Ready?");
+      alert("Yay! There's only 3 questions, ready?");
       console.log("Is Ready: " + playgame);
     } else {
       alert("But we're virtual friends now..let's play?"); //again...not creepy at all
+      console.log("Is Ready: " + !playgame);
     }
-    //Question 2
+    //Question 1 of game
     playgame = confirm("Was the shortest war in history 39 minutes?");
     console.log("Shortest war 39 minutes? " + playgame);
     if (playgame) {
-      alert("Correcto! It was 38 minutes.\n Ready for question 2?");
+      alert("Sorry! It was 38 minutes.\n It's okay, let's move on!");
       console.log("Is Ready for 2: " + playgame);
       score += 1;
     } else {
-      alert("Sorry! It was 38 minutes.\n It's okay, let's move on!");
+      alert("Correcto! It was 38 minutes.\n Ready for question 2?");
+      console.log("Is Ready for 2: " + !playgame);
     }
-
+    //Question 2 of game
+    playgame = confirm("Alchemy Code Lab is the first school I attended since High School?");
+    console.log("Alchemy?: " + playgame);
+    if (playgame) {
+      alert("Darn, it's actually the 6th! Let's go for question 3!");
+      console.log("Is Ready for 3: " + playgame);
+      score += 1;
+    } else {
+      alert("You got it! I've had my run on different schools. Get ready for question 3!");
+      console.log("Is Ready for 3: " + !playgame);
+    }
+    //Question 3 of game
+    playgame = confirm()
     </script>
   </head>
   <body>
@@ -80,7 +94,7 @@
           </ul>
         <p>I know, I know, those last three aren't coding languages...but I did
           say it was a list of different languages</strong>(^.^)</strong> <br/>
-          I definitely haven't mastered any of them (alhtough I am pretty fluent
+          I definitely haven't mastered any of them (although I am pretty fluent
           in Spanish) but I am hopeful I'll continue to get better!<p>
 
       <h2>But where did I study, you ask?</h2>
