@@ -3,8 +3,18 @@
   <head>
     <title>Nancy's Hello World Page</title>
     <script type="text/javascript">
-      var newFriend = prompt("Hi! What's your name?"); //newFriend..not creepy
-      alert("Welcome to my page, " + newFriend + "! Want to be virtual friends?");
+    //get visitors name
+    var newFriend = prompt("Hi! What's your name?"); //newFriend..not creepy
+    console.log("User Name: "+newFriend);
+    alert("Welcome to my page, " + newFriend + "! Want to be virtual friends?");
+    //Question 1
+    var playgame = confirm("Now that you know all about me " +newFriend+", want to play a game to see just how much?");
+    console.log("Wants to play: " + playgame);
+    if (playgame) {
+      playgame = confirm("Yay! Ready?");
+    } else {
+      alert("But we're virtual friends now..let's play?") //again...not creepy at all
+    }
     </script>
   </head>
   <body>
