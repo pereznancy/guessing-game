@@ -58,15 +58,32 @@
     }
     //Respond to the score
     if (score === 3) {
-      alert("Wow! You paid attention! Fantanstic!");
+      alert("Wow! You paid attention, " + newFriend + "! Fantanstic!");
     } else if (score === 2) {
-      alert("Not bad young grasshopper!");
+      alert("Not bad, young grasshopper!");
     } else if (score === 1) {
       alert("1 is better than none!");
     } else {
-      alert("Womp womp...looks like you didn't get any right. Better luck next time!");
+      alert("Womp womp...looks like you didn't get any right. Better luck next time, " + newFriend + "!");
     }
-    console.log("Final Score: " + score);
+    console.log("Score: " + score);
+
+    //Bonus Guess question
+    playgame = alert("Here's a bonus question to up your score!\n Try to guess my favorite number!");
+    console.log("Ready for bonus: " + playgame);
+    var bonus = prompt("My favorite number is between 1-11, what is it?");
+    if (bonus === 9) {
+      prompt("wow");
+    }
+    while (bonus < 9){
+      alert("Too low, try again");
+      bonus = prompt("My favorite number is between 1-11, what is it?");
+    }
+    while (bonus > 9) {
+      alert("Too high, try again!");
+      bonus = prompt("My favorite number is between 1-11, what is it?");
+    }
+
 
 
     </script>
