@@ -33,15 +33,29 @@
     playgame = confirm("Alchemy Code Lab is the first school I attended since High School?");
     console.log("Alchemy?: " + playgame);
     if (playgame) {
-      alert("Darn, it's actually the 6th! Let's go for question 3!");
+      alert("Darn, it's actually the 6th! Let's go for the last question!");
       console.log("Is Ready for 3: " + playgame);
       score += 1;
     } else {
-      alert("You got it! I've had my run on different schools. Get ready for question 3!");
+      alert("You got it! I've had my run on different schools. Get ready for the last question!");
       console.log("Is Ready for 3: " + !playgame);
     }
     //Question 3 of game
-    playgame = confirm()
+    playgame = confirm("Do I want to do workshops to introduce kids to tech?");
+    console.log("Kid Workshops: " + playgame);
+    if (playgame) {
+      alert("Yeeea! I do want to introduce kids from my neighborhood back home into tech!");
+      score += 1;
+      alert("Okay, let's see how you did...");
+      console.log("Ready for score: " + playgame);
+      alert("You got " + score + "out of 3 right!");
+    } else {
+      alert("Incorrect. I definitely want to introcude tech to the kids back home.");
+      alert("Okay, let's see how you did...");
+      console.log("Ready for score: " + !playgame);
+      alert("You got " + score + "out of 3 right!");
+    }
+
     </script>
   </head>
   <body>
