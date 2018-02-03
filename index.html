@@ -69,13 +69,13 @@
     console.log("Score: " + score);
 
     //Bonus Guess question
-    playgame = alert("Here's a bonus question to up your score!\n Try to guess my favorite number!");
-    console.log("Ready for bonus: " + playgame);
+    playbonus = alert("Here's a bonus question to up your score!\n Try to guess my favorite number!");
+    console.log("Ready for bonus: " + playbonus );
     var bonus = prompt("My favorite number is between 1-11, what is it?");
-    if (bonus === 9) {
-      prompt("wow");
+     if (bonus === 9) {
+      prompt("wow, are you a wizard?");
     }
-    while (bonus < 9){
+    while (bonus < 9) {
       alert("Too low, try again");
       bonus = prompt("My favorite number is between 1-11, what is it?");
     }
@@ -83,6 +83,10 @@
       alert("Too high, try again!");
       bonus = prompt("My favorite number is between 1-11, what is it?");
     }
+    score++;
+    alert("Yay, you got it, it is 9! You're new score is " + score + "!");
+    console.log("Final Score: " + score);
+    alert("Hope I get to know you too!");
 
 
 
