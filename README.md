@@ -1,5 +1,5 @@
 # guessing-game
-*This assignment is a project to create a guessing game for the user visiting my website. This project has been worked on in parts with requirements needed to be fullfilled along the way.
+This assignment is a project to create a guessing game for the user visiting my website. This project has been worked on in parts with requirements needed to be fullfilled along the way.
 
 # Part 1
 * Use basic markup to structure my index.html page
