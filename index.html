@@ -72,21 +72,26 @@
     playbonus = alert("Here's a bonus question to up your score!\n Try to guess my favorite number!");
     console.log("Ready for bonus: " + playbonus );
     var bonus = prompt("My favorite number is between 1-11, what is it?");
-     if (bonus === 9) {
-      alert("wow, are you a wizard?"); //IDK why this isn't showing up...
-    }
-    while (bonus < 9) {
-      alert("Too low, try again");
-      bonus = prompt("My favorite number is between 1-11, what is it?");
-    }
-    while (bonus > 9) {
-      alert("Too high, try again!");
-      bonus = prompt("My favorite number is between 1-11, what is it?");
+    while (bonus != 9) {
+      if (bonus < 9 && bonus >= 1) {
+        alert("Too low, try again");
+        bonus = prompt("My favorite number is between 1-11, what is it?");
+      } else if (bonus < 1) {
+        alert("Don't be silly, that's not between 1-11! Try again.");
+        bonus = prompt("My favorite number is between 1-11, what is it?");
+      } else if (bonus > 11) {
+        alert("That number is definitely not between 1-11, try again!");
+        bonus = prompt("My favorite number is between 1-11, what is it?");
+      }else {
+        alert("Too high, try again");
+        bonus = prompt("My favorite number is between 1-11, what is it?");
+      }
     }
     score++;
-    alert("Yay, you got it, it is 9! You're new score is " + score + "!"); //this will do
+    alert("What witchery is this?!\n\n You got it, my favorite number is 9!");
+    alert("You're new score is " + score +"!")
+    alert("Thanks, " + newFriend + ". I hope to get to know you too!") //muahahaha
     console.log("Final Score: " + score);
-    alert("Hope I get to know you too, " + newFriend + "!"); //*insert creep laugh here*
 
 
 
