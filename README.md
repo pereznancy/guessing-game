@@ -1,11 +1,17 @@
 # guessing-game
-This assignment is a project to create a guessing game for the user visiting my website. This project has been worked on in parts with requirements needed to be fullfilled along the way.
+This assignment is a project to create a guessing game for the user visiting my website. This project has been worked on in parts with requirements needed to be fulfilled along the way.
+Assuming that the user has read the page, the user will be asked 3 questions about
+the information. There will also be a bonus question that requires user to guess
+a number. The user will be informed if their guess is too high, too low, or correct.
+After the completion of the questions, the user will be informed how many questions
+were correct in the form of a score.
+Below is the breakdown of the parts of the assignment.  
 
 # Part 1
 * Use basic markup to structure my index.html page
 * Receive the user's name to personalize the experience
 ### Technical Requirements
-- Use atam to complete HTML file
+- Use Atom text editor to complete HTML file
 - Use HTML appropriately
 - Use JavaScript to
 
@@ -19,7 +25,7 @@ This assignment is a project to create a guessing game for the user visiting my 
 - Create GitHub Repo
 - Ensure directories and file structure are organized
 - Cleanly and correctly indented HMLT and JavaScript
-- Add, Commit, Push process being followed 
+- Add, Commit, Push process being followed
 
 # Part 3
 * Create a new branch in repo without affecting master branch
@@ -32,4 +38,4 @@ This assignment is a project to create a guessing game for the user visiting my 
 - Update README.md file
 - Use form control for the fourth question
 - Use a counter to keep track of score
-- Use Logical Operators effeciently
+- Use Logical Operators efficiently
