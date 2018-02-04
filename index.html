@@ -18,6 +18,7 @@
     if (playgame) {
       alert("Yay! There's only 3 questions, ready?");
       console.log("Is Ready: " + playgame);
+      //you actually don't have option; you MUST play!
     } else {
       alert("But we're virtual friends now..let's play?"); //again...not creepy at all
       console.log("Is Ready: " + !playgame);
@@ -40,7 +41,7 @@
       alert("Darn, it's actually the 6th! Let's go for the last question!");
       console.log("Is Ready for 3: " + playgame);
     } else {
-      alert("You got it! I've had my run on different schools. Get ready for the last question!");
+      alert("You got it! I've had my run at different schools. Get ready for the last question!");
       console.log("Is Ready for 3: " + !playgame);
       score += 1;
     }
@@ -91,12 +92,13 @@
         bonus = prompt("My favorite number is between 1-11, what is it?");
       }
     }
-    //Give final score 
+    //Give final score
     score++;
     alert("What witchery is this?!\n\n You got it, my favorite number is 9!");
     alert("You're new score is " + score +"!")
     alert("Thanks, " + newFriend + ". I hope to get to know you too!") //muahahaha
     console.log("Final Score: " + score);
+
 
 
 
