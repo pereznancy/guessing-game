@@ -20,45 +20,45 @@
       console.log("Is Ready: " + playgame);
       //you actually don't have option; you MUST play!
     } else {
-      alert("But we're virtual friends now..let's play?"); //again...not creepy at all
+      alert("But we're virtual friends now..let's play?"); //...not creepy at all
       console.log("Is Ready: " + !playgame);
     }
     //Question 1 of game: answer is CANCEL
-    playgame = confirm("Was the shortest war in history 39 minutes?");
-    console.log("Shortest war 39 minutes? " + playgame);
-    if (playgame) {
+    shortestWar = confirm("Was the shortest war in history 39 minutes?");
+    console.log("Shortest war 39 minutes? " + shortestWar);
+    if (shortestWar) {
       alert("Sorry! It was 38 minutes.\n It's okay, let's move on!");
-      console.log("Is Ready for 2: " + playgame);
+      console.log("Is Ready for 2: " + shortestWar);
     } else {
       alert("Correcto! It was 38 minutes.\n Ready for question 2?");
-      console.log("Is Ready for 2: " + !playgame);
-      score += 1;
+      console.log("Is Ready for 2: " + !shortestWar);
+      score++;
     }
     //Question 2 of game: answer is CANCEL
-    playgame = confirm("Alchemy Code Lab is the first school I attended since High School?");
-    console.log("Alchemy?: " + playgame);
-    if (playgame) {
+    firstSchool = confirm("Alchemy Code Lab is the first school I attended since High School?");
+    console.log("Alchemy?: " + firstSchool);
+    if (firstSchool) {
       alert("Darn, it's actually the 6th! Let's go for the last question!");
-      console.log("Is Ready for 3: " + playgame);
+      console.log("Is Ready for 3: " + firstSchool);
     } else {
       alert("You got it! I've had my run at different schools. Get ready for the last question!");
-      console.log("Is Ready for 3: " + !playgame);
-      score += 1;
+      console.log("Is Ready for 3: " + !firstSchool);
+      score++;
     }
     //Question 3 of game: answer is OK
-    playgame = confirm("Do I want to do workshops to introduce kids to tech?");
-    console.log("Kid Workshops: " + playgame);
+    techyKids = confirm("Do I want to do workshops to introduce kids to tech?");
+    console.log("Kid Workshops: " + techyKids);
 
-    if (playgame) {
+    if (techyKids) {
       alert("Yeeea! I do want to introduce kids from my neighborhood back home into tech!");
-      score += 1;
+      score++;
       alert("Okay, let's see how you did...");
-      console.log("Ready for score: " + playgame);
+      console.log("Ready for score: " + techyKids);
       alert("You got " + score + " out of 3 right!");
     } else {
       alert("Incorrect. I definitely want to introcude tech to the kids back home.");
       alert("Okay, let's see how you did...");
-      console.log("Ready for score: " + !playgame);
+      console.log("Ready for score: " + !techyKids);
       alert("You got " + score + " out of 3 right!");
     }
     //Respond to the score: Answer is 9
