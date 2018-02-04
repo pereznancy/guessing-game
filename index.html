@@ -40,7 +40,7 @@
       console.log("Is Ready for 3: " + !playgame);
       score += 1;
     }
-    //Question 3 of game
+    //Question 3 of game: answer is OK
     playgame = confirm("Do I want to do workshops to introduce kids to tech?");
     console.log("Kid Workshops: " + playgame);
 
@@ -56,7 +56,7 @@
       console.log("Ready for score: " + !playgame);
       alert("You got " + score + " out of 3 right!");
     }
-    //Respond to the score
+    //Respond to the score: Answer is 9
     if (score === 3) {
       alert("Wow! You paid attention, " + newFriend + "! Fantanstic!");
     } else if (score === 2) {
@@ -73,7 +73,7 @@
     console.log("Ready for bonus: " + playbonus );
     var bonus = prompt("My favorite number is between 1-11, what is it?");
      if (bonus === 9) {
-      prompt("wow, are you a wizard?");
+      alert("wow, are you a wizard?"); //IDK why this isn't showing up...
     }
     while (bonus < 9) {
       alert("Too low, try again");
@@ -84,9 +84,9 @@
       bonus = prompt("My favorite number is between 1-11, what is it?");
     }
     score++;
-    alert("Yay, you got it, it is 9! You're new score is " + score + "!");
+    alert("Yay, you got it, it is 9! You're new score is " + score + "!"); //this will do
     console.log("Final Score: " + score);
-    alert("Hope I get to know you too!");
+    alert("Hope I get to know you too, " + newFriend + "!"); //*insert creep laugh here*
 
 
 
