@@ -4,7 +4,10 @@
     <title>Nancy's Hello World Page</title>
     <script type="text/javascript">
     //get visitors name
-    var newFriend = prompt("Hi! What's your name?"); //newFriend..not creepy
+    var newFriend = "";
+    while (newFriend == null || newFriend.trim() == "") {
+      newFriend = prompt("Hi! What's your name?");
+    }
     console.log("User Name: "+newFriend);
     alert("Welcome to my page, " + newFriend + "! Want to be virtual friends?");
     var score = 0
