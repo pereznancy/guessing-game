@@ -4,31 +4,31 @@ function getName() {
   var newFriend = "";
   while (newFriend == null || newFriend.trim() == ""){
     newFriend = prompt("Hi! What's your name?");
-    return newFriend;
     document.getElementById("friend").innerHTML= "Welcome " + newFriend + "!";
   }
 }
+
 getName();
 
 
-
-Score tracker starts at 0
+//Score tracker starts at 0
 var score = 0
 
-//Let's Play
 
 
-// var playgame = confirm("Now that you've read my page " +newFriend+", want to play a game to see what you remember?");
-// console.log("Wants to play: " + playgame);
-// if (playgame) {
-//   alert("Yay! There's only 3 questions, ready?");
-//   console.log("Is Ready: " + playgame);
-//   //you actually don't have option; you MUST play!
-// } else {
-//   alert("But we're virtual friends now..let's play?"); //...not creepy at all
-//   console.log("Is Ready: " + !playgame);
-// }
+var playReady;
 
+function playGame(){
+  playReady = confirm("Now that you've read my page want to play a game to see what you remember?");
+    if (!playReady){
+    alert("But we're virtual friends now..let's play?");
+  } else {
+    alert("Yay! There's only 3 questions, ready?"); //...not creepy at all
+  }
+  document.getElementById("play").innerHTML= "Okay, Let's Play!";
+}
+
+playGame();
 
 
 
