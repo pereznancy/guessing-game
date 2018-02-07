@@ -7,13 +7,10 @@ function getName() {
     document.getElementById("friend").innerHTML= "Welcome " + newFriend + "!";
   }
 }
-
 getName();
-
 
 //Score tracker starts at 0
 var score = 0
-
 
 //in the words of SAW..."Let's play a game."
 var playReady;
@@ -26,7 +23,6 @@ function playGame(){
   }
   document.getElementById("play").innerHTML= "Okay, Let's Play!";
 }
-
 playGame();
 
 //Question 1 of game: answer is CANCEL
@@ -40,8 +36,39 @@ function getFirst() {
   }
     score++;
 }
-
 getFirst();
+
+
+//Question 2 of game: answer is CANCEL
+var firstSchool;
+function getSecond() {
+  firstSchool = confirm("Alchemy Code Lab is the first school I attended since High School?");
+    if (firstSchool) {
+      document.getElementById("school").innerHTML= "Uh oh, you got question 2 wrong!";
+    } else {
+      document.getElementById("school").innerHTML= "That's right! I've had my run at different schools.";
+    }
+      score++
+}
+getSecond();
+
+//Question 3 of game: answer is OK
+
+
+
+
+// //Respond to the score: Answer is 9
+// if (score === 3) {
+//   alert("Wow! You paid attention, " + newFriend + "! Fantanstic!"); //newFriend=bestFriend
+// } else if (score === 2) {
+//   alert("Not bad, young grasshopper!");
+// } else if (score === 1) {
+//   alert("1 is better than none!");
+// } else {
+//   alert("Womp womp...looks like you didn't get any right. Better luck next time, " + newFriend + "!");
+// }
+
+
 
 
 
