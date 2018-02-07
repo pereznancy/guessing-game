@@ -2,113 +2,23 @@
 <html>
   <head>
     <title>Nancy's Hello World Page</title>
-    <script type="text/javascript">
-    //get visitors name
-    //visitor must enter something
-    var newFriend = "";
-    while (newFriend == null || newFriend.trim() == "") {
-      newFriend = prompt("Hi! What's your name?");
-    }
-    console.log("User Name: "+newFriend);
-    alert("Welcome to my page, " + newFriend + "! Want to be virtual friends?");
-    var score = 0
-    //Lets play game Question?
-    var playgame = confirm("Now that you've read my page " +newFriend+", want to play a game to see what you remember?");
-    console.log("Wants to play: " + playgame);
-    if (playgame) {
-      alert("Yay! There's only 3 questions, ready?");
-      console.log("Is Ready: " + playgame);
-      //you actually don't have option; you MUST play!
-    } else {
-      alert("But we're virtual friends now..let's play?"); //...not creepy at all
-      console.log("Is Ready: " + !playgame);
-    }
-    //Question 1 of game: answer is CANCEL
-    shortestWar = confirm("Was the shortest war in history 39 minutes?");
-    console.log("Shortest war 39 minutes? " + shortestWar);
-    if (shortestWar) {
-      alert("Sorry! It was 38 minutes.\n It's okay, let's move on!");
-      console.log("Is Ready for 2: " + shortestWar);
-    } else {
-      alert("Correcto! It was 38 minutes.\n Ready for question 2?");
-      console.log("Is Ready for 2: " + !shortestWar);
-      score++;
-    }
-    //Question 2 of game: answer is CANCEL
-    firstSchool = confirm("Alchemy Code Lab is the first school I attended since High School?");
-    console.log("Alchemy?: " + firstSchool);
-    if (firstSchool) {
-      alert("Darn, it's actually the 6th! Let's go for the last question!");
-      console.log("Is Ready for 3: " + firstSchool);
-    } else {
-      alert("You got it! I've had my run at different schools. Get ready for the last question!");
-      console.log("Is Ready for 3: " + !firstSchool);
-      score++;
-    }
-    //Question 3 of game: answer is OK
-    techyKids = confirm("Do I want to do workshops to introduce kids to tech?");
-    console.log("Kid Workshops: " + techyKids);
-    if (techyKids) {
-      alert("Yeeeah! I do want to introduce kids from my neighborhood back home into tech!"); //I'm going going back back to cali cali
-      score++;
-      alert("Okay, let's see how you did...");
-      console.log("Ready for score: " + techyKids);
-      alert("You got " + score + " out of 3 right!");
-    } else {
-      alert("Incorrect. I definitely want to introcude tech to the kids back home.");
-      alert("Okay, let's see how you did...");
-      console.log("Ready for score: " + !techyKids);
-      alert("You got " + score + " out of 3 right!");
-    }
-    //Respond to the score: Answer is 9
-    if (score === 3) {
-      alert("Wow! You paid attention, " + newFriend + "! Fantanstic!"); //newFriend=bestFriend
-    } else if (score === 2) {
-      alert("Not bad, young grasshopper!");
-    } else if (score === 1) {
-      alert("1 is better than none!");
-    } else {
-      alert("Womp womp...looks like you didn't get any right. Better luck next time, " + newFriend + "!");
-    }
-    console.log("Score: " + score);
 
-    //Bonus Guess question
-    playbonus = alert("Here's a bonus question to up your score!\n Try to guess my favorite number!");
-    console.log("Ready for bonus: " + playbonus );
-    var bonus = prompt("My favorite number is between 1-11, what is it?");
-    while (bonus != 9) {
-      if (bonus < 9 && bonus >= 1) {
-        alert("Too low, try again");
-        bonus = prompt("My favorite number is between 1-11, what is it?");
-      } else if (bonus < 1) {
-        alert("Don't be silly, that's not between 1-11! Try again.");
-        bonus = prompt("My favorite number is between 1-11, what is it?");
-      } else if (bonus > 11) {
-        alert("That number is definitely not between 1-11, try again!");
-        bonus = prompt("My favorite number is between 1-11, what is it?");
-      }else {
-        alert("Too high, try again");
-        bonus = prompt("My favorite number is between 1-11, what is it?");
-      }
-    }
-    //Give final score
-    score++;
-    alert("What witchery is this?!\n\n You got it, my favorite number is 9!");
-    alert("You're new score is " + score +"!")
-    alert("Thanks, " + newFriend + ". I hope to get to know you too!") //muahahaha
-    console.log("Final Score: " + score);
-
-
-
-
-    </script>
   </head>
+
   <body>
-    <h1>Hello World and <script>document.write(newFriend);</script>!</h1>
-      <p>My name is Nancy, this is my <i>first</i> webpage, and I am quite
+    <!-- <input type="button" value="Name?" onclick="getName()"><br> -->
+     <div id="friend"></div>
+    <!-- <h1>Hello World and <script>document.write(newFriend);</script>!</h1> -->
+
+      <p>
+        My name is Nancy, this is my <i>first</i> webpage, and I am quite
          excited about it!
+       </p>
+
     <h2>How did you get here?</h2>
-      <p>You're probably wondering why you are even here. I'm actually not sure
+
+      <p>
+        You're probably wondering why you are even here. I'm actually not sure
          myself, but I am glad you are! There are so many people in this world,
          and so little time to make all the friends possible. Thanks to <i>the
          <strong>Internet</i></strong> it's much easier to meet someone that has
@@ -118,11 +28,17 @@
          talk about the shortest war <em>EVER</em> that only lasted 38 minutes
          before Zanzibar surrendered to England in 1896. Whatever the subject,
          your real life friends might not want to talk about all those cool
-         things. So why not make some <i>virtual</i> new friends?</p>
+         things. So why not make some <i>virtual</i> new friends?
+       </p>
+
     <h5>Are you still here...?</h5>
+
     <h6>Keep going if you still are!<br/>*<br/>**<br/>***<br/>****<br/>*****</h6>
+
     <h2>Who am I?</h2>
-    <p>Only a tiny spec in this vast universe! Who is also a pitbull lover, language
+
+    <p>
+      Only a tiny spec in this vast universe! Who is also a pitbull lover, language
        enthusiast, and now, also a baby coder. My pup Marley and I are living
        in Portland, as I code my way into the tech world. <br/>It wasn't until
        a bit over 2 years ago that I had a revelation: I could make a career out
@@ -136,10 +52,15 @@
        school and began working on my Computer Engineering degree Spring of '16
        at PSU. Although, I am currently taking a small hiatus from PSU and joined
        Alchemy Code Lab's Coding Bootcamp!
+     </p>
 
       <h2>What have I learned?</h2>
-        <p>I don't have a lot of experience coding, but here's a list
-          of different languages I have experience with: </p>
+
+        <p>
+          I don't have a lot of experience coding, but here's a list
+          of different languages I have experience with:
+        </p>
+
           <ul>
             <li>Python</li>
             <li>Verilog</li>
@@ -151,15 +72,22 @@
             <li>French</li>
             <li>American Sign Language</li>
           </ul>
-        <p>I know, I know, those last three aren't coding languages...but I did
+
+        <p>
+          I know, I know, those last three aren't coding languages...but I did
           say it was a list of different languages</strong>(^.^)</strong> <br/>
           I definitely haven't mastered any of them (although I am pretty fluent
-          in Spanish) but I am hopeful I'll continue to get better!<p>
+          in Spanish) but I am hopeful I'll continue to get better!
+        </p>
 
       <h2>But where did I study, you ask?</h2>
-        <p>Shamelessly, I have gone through my "What if I want to do this..."
+
+        <p>
+          Shamelessly, I have gone through my "What if I want to do this..."
           stages in life. Take a look at the list, and you'll see what I am talking
           about.
+        </p>
+
           <ol>
             <li>Ventura Community College-Humanities</li>
             <li>Pierce Community College-American Sign Language</li>
@@ -168,15 +96,22 @@
             <li>Portland State University-Computer Engineering</li>
             <li>Alchemy Code Lab-Coding Bootcamp</li>
           </ol>
-        <p>There is some sense in what seems like madness. There was usually a
+
+        <p>
+          There is some sense in what seems like madness. There was usually a
           life event, or a financial need, that pushed me to make a decision to
           stop the direction I was moving. I still love baking and signing whenever
-          possible, but I have a love for technology like no other.</p>
+          possible, but I have a love for technology like no other.
+        </p>
 
         <h3>So...where to now?</h3>
-          <p>There are so many things I want to do, especially now that I know
+
+          <p>
+            There are so many things I want to do, especially now that I know
             there are limitless possiblities with tech. Below are a few of my
-            near-future goals!<p>
+            near-future goals!
+            <p>
+
             <ul>
               <li>Pass Alchemy Code Lab's BootCamp</li>
               <li>Transition professionally into the Tech Industry</li>
@@ -186,8 +121,13 @@
               <li>Work on starting day/weekend workshops for the kids back home
                   to introduce them to tech</li>
             </ul>
-        <h1><script>document.write(newFriend);</script>!</h1>
-          <p>Now that you know all of this stuff about me, tell me something about
-            you!</p>
+
+        <!-- <h1><script>document.write(newFriend);</script>!</h1> -->
+
+          <p>
+            Now that you know all of this stuff about me, tell me something about
+            you!
+          </p>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
