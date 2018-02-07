@@ -53,7 +53,18 @@ function getSecond() {
 getSecond();
 
 //Question 3 of game: answer is OK
-
+var techyKids;
+function getThird() {
+  techyKids = confirm("Do I want to do workshops to introduce kids to tech?");
+    if (techyKids) {
+      document.getElementById("techy").innerHTML= "Yeeeah! I do want to introduce kids from my neighborhood back home into tech!";
+    } else {
+      document.getElementById("techy").innerHTML= "Incorrect. I definitely want to introcude tech to the kids back home.";
+    }
+      score++
+      document.getElementById("score").innerHTML= "You're final score is " + score + "!";
+}
+getThird();
 
 
 
