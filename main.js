@@ -15,9 +15,8 @@ getName();
 var score = 0
 
 
-
+//in the words of SAW..."Let's play a game."
 var playReady;
-
 function playGame(){
   playReady = confirm("Now that you've read my page want to play a game to see what you remember?");
     if (!playReady){
@@ -29,6 +28,20 @@ function playGame(){
 }
 
 playGame();
+
+//Question 1 of game: answer is CANCEL
+var shortWar;
+function getFirst() {
+  shortWar = confirm("Was the shortest waar in history 39 minutes?");
+    if (shortWar) {
+    document.getElementById("war").innerHTML= "Dang, you got question 1 wrong!";
+  } else {
+    document.getElementById("war").innerHTML= "Yay! You got question 1 right!";
+  }
+    score++;
+}
+
+getFirst();
 
 
 
