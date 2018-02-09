@@ -4,7 +4,7 @@ function getName() {
   var newFriend = "";
   while (newFriend == null || newFriend.trim() == ""){
     newFriend = prompt("Hi! What's your name?");
-    document.getElementById("friend").innerHTML= "Welcome " + newFriend + "!";
+    document.getElementById("friend").innerHTML= "Welcome " + newFriend + ", my name is Nancy!";
   }
 }
 
@@ -104,9 +104,9 @@ function scoreResponse() {
   }
 }
 getName();
-playGame();
-getFirst();
-getSecond();
-getThird();
-bonus();
-scoreResponse();
+// playGame();
+// getFirst();
+// getSecond();
+// getThird();
+// bonus();
+// scoreResponse();

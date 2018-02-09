@@ -1,0 +1,45 @@
+body {
+  background-color: #7769AA;
+}
+#friend {
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  width: 80%;
+  border: 5px solid white;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #A196C8;
+  color: #3A2A74;
+  font-style: oblique;
+  font-size: 40px;
+}
+
+#info {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  border: 5px solid white;
+  width: 60%;
+  background-color: #A196C8;
+  margin-top: 70px;
+  margin-left: 20px;
+  font-style: oblique;
+  padding: 25px ;
+}
+
+#border {
+  border: solid #312D75;
+  margin:auto;
+
+}
+
+#topborder {
+  border: solid #312D75;
+  margin-top: 45px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+
+}
