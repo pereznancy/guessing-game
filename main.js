@@ -105,6 +105,12 @@ function scoreResponse() {
 }
 getName();
 
+// function newButton(){
+//   document.getElementById('newButton').innerHTML = '<input type="button" onClick="funQuestion();" value="One more just for funsies..." />';
+// }
+
+
+
 function startGame() {
   playGame();
   getFirst();
@@ -112,4 +118,5 @@ function startGame() {
   getThird();
   bonus();
   scoreResponse();
+  newButton();
 }
