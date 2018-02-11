@@ -39,3 +39,7 @@ Below is the breakdown of the parts of the assignment.
 - Use form control for the fourth question
 - Use a counter to keep track of score
 - Use Logical Operators efficiently
+
+### New Changes
+-Re-write code in a modular way, so that I can reuse functionality without duplicating code.
+-Show the user the answers and responses on the web page so we don't have to constantly interact with alerts. 
