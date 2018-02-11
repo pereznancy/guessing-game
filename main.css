@@ -2,13 +2,13 @@ body {
   background-color: #7769AA;
 }
 #friend {
-  display: block;
+  display: inline-block;
   text-align: center;
   box-sizing: border-box;
   width: 80%;
   border: 5px solid white;
   margin-top: 20px;
-  margin-left: auto;
+  margin-left: 110px;
   margin-right: auto;
   background-color: #A196C8;
   color: #3A2A74;
@@ -17,7 +17,7 @@ body {
 }
 
 #info {
-  display: block;
+  display: inline-block;
   box-sizing: border-box;
   text-align: center;
   border: 5px solid white;
@@ -35,11 +35,31 @@ body {
 
 }
 
+#gameBorder{
+  border: solid #312D75;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: oblique;
+}
+
 #topborder {
   border: solid #312D75;
   margin-top: 45px;
   margin-left: 20px;
   margin-right: 20px;
+}
 
+#game {
+  border: 5px solid white;
+  display: inline-block;
+  margin-top: 70px;
+  width: 35%;
+  float: right;
+  background-color: #A196C8;
+}
 
+#button {
+  text-align: center;
 }

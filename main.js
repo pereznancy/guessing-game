@@ -21,7 +21,7 @@ function playGame(){
   } else {
     alert("Yay! There's only 3 questions, ready?"); //...not creepy at all
   }
-  document.getElementById("play").innerHTML= "Okay, Let's Play!";
+  document.getElementById("result").innerHTML= "Okay, let's see how you did!";
 }
 
 
@@ -104,9 +104,12 @@ function scoreResponse() {
   }
 }
 getName();
-// playGame();
-// getFirst();
-// getSecond();
-// getThird();
-// bonus();
-// scoreResponse();
+
+function startGame() {
+  playGame();
+  getFirst();
+  getSecond();
+  getThird();
+  bonus();
+  scoreResponse();
+}
