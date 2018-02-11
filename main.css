@@ -14,6 +14,7 @@ body {
   color: #3A2A74;
   font-style: oblique;
   font-size: 40px;
+  border-radius: 11px;
 }
 
 #info {
@@ -21,6 +22,7 @@ body {
   box-sizing: border-box;
   text-align: center;
   border: 5px solid white;
+  border-radius: 20px;
   width: 60%;
   background-color: #A196C8;
   margin-top: 70px;
@@ -32,23 +34,12 @@ body {
 #border {
   border: solid #312D75;
   margin:auto;
+  border-radius: 25px;
 
 }
 
-#gameBorder{
-  border: solid #312D75;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-style: oblique;
-}
-
-#topborder {
-  border: solid #312D75;
-  margin-top: 45px;
-  margin-left: 20px;
-  margin-right: 20px;
+#randomHead {
+  font-size:
 }
 
 #game {
@@ -58,8 +49,19 @@ body {
   width: 35%;
   float: right;
   background-color: #A196C8;
+  border-radius: 20px;
 }
 
 #button {
   text-align: center;
+}
+
+#gameBorder{
+  border: solid #312D75;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: oblique;
+  border-radius: 25px;
 }
