@@ -30,9 +30,9 @@ var shortWar;
 function getFirst() {
   shortWar = confirm("Was the shortest war in history 39 minutes?");
     if (shortWar) {
-    document.getElementById("war").innerHTML= "Dang, you got question 1 wrong! The shortest war was 38 minutes!";
+    document.getElementById("warWrong").innerHTML= "Dang, you got question 1 wrong!<br/><img src='wrong.png'>";
   } else {
-    document.getElementById("war").innerHTML= "Yay! You got question 1 right! The shortest war was 38 minutes!";
+    document.getElementById("warRight").innerHTML= "Yay! You got question 1 right!<br/><img src='correct.png'>";
     score++;
   }
 }
@@ -44,9 +44,9 @@ var firstSchool;
 function getSecond() {
   firstSchool = confirm("Alchemy Code Lab is the first school I attended since High School?");
     if (firstSchool) {
-      document.getElementById("school").innerHTML= "Uh oh, you got question 2 wrong! Alchemy is not the first school I've attended.";
+      document.getElementById("schoolWrong").innerHTML= "Uh oh, you got question 2 wrong!<br/> <img src='wrong.png'><br/>";
     } else {
-      document.getElementById("school").innerHTML= "That's right! I've had my run at different schools.";
+      document.getElementById("schoolRight").innerHTML= "Question 2 is right!<br/><img src='correct.png'> ";
       score++;
     }
 }
@@ -57,10 +57,10 @@ var techyKids;
 function getThird() {
   techyKids = confirm("Do I want to do workshops to introduce kids to tech?");
     if (techyKids) {
-      document.getElementById("techy").innerHTML= "Yeeeah! I do want to introduce kids from my neighborhood back home into tech!";
+      document.getElementById("techyRight").innerHTML= "Yeeeah, that's correct!<br/><img src='correct.png'>";
       score++;
     } else {
-      document.getElementById("techy").innerHTML= "Incorrect. I definitely want to introcude tech to the kids back home.";
+      document.getElementById("techyWrong").innerHTML= "Womp Womp, question 3 is incorrect.<br/> <img src='wrong.png'><br/>";
     }
 }
 
@@ -88,7 +88,7 @@ function bonus() {
     }
   }
   document.getElementById("bonus").innerHTML = "You got it, my favorite number is 9!";
-  document.getElementById("score").innerHTML = "You're final score is " + score;
+  document.getElementById("score").innerHTML = "You're final score is " + score +"<br/><img src='clap.gif'>";
 }
 
 
@@ -96,11 +96,11 @@ function bonus() {
 function scoreResponse() {
   score;
   if (score == 3) {
-    document.getElementById("3right").innerHTML= "Wow! You paid attention! Fantanstic!"
+    document.getElementById("three").innerHTML= "Wow! You paid attention! Fantanstic!"
   } else if (score == 2) {
-    document.getElementById("2right").innerHTML= "Not bad, young grasshopper!";
+    document.getElementById("two").innerHTML= "Not bad, young grasshopper!";
   } else {
-    document.getElementById("1right").innerHTML= "1 is better than none!";
+    document.getElementById("one").innerHTML= "1 is better than none!";
   }
 }
 getName();
@@ -118,5 +118,4 @@ function startGame() {
   getThird();
   bonus();
   scoreResponse();
-  newButton();
 }

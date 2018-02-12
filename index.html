@@ -16,9 +16,9 @@
 
 <div id="info">
   <div id="border">
-    <h2 id="randomHead">How did you get here?</h2>
+    <h2 class="randomHead">How did you get here?</h2>
 
-      <p id="random">
+      <p>
         You're probably wondering why you are even here. I'm actually not sure
          myself, but I am glad you are! There are so many people in this world,
          and so little time to make all the friends possible. Thanks to <i>the
@@ -32,11 +32,7 @@
          things. So why not make some <i>virtual</i> new friends?
        </p>
 
-    <h5>Are you still here...?</h5>
-
-    <h6>Keep going if you still are!<br/>*<br/>**<br/>***<br/>****<br/>*****</h6>
-
-    <h2>Who am I?</h2>
+    <h2 class="randomHead">Who am I?</h2>
 
     <p>
       Only a tiny spec in this vast universe! Who is also a pitbull lover, language
@@ -55,13 +51,13 @@
        Alchemy Code Lab's Coding Bootcamp!
      </p>
 
-      <h2>What have I learned?</h2>
+      <h2 class="randomHead">What have I learned?</h2>
 
         <p>
           I don't have a lot of experience coding, but here's a list
           of different languages I have experience with:
         </p>
-
+        <div id="language">
           <ul>
             <li>Python</li>
             <li>Verilog</li>
@@ -73,6 +69,7 @@
             <li>French</li>
             <li>American Sign Language</li>
           </ul>
+        </div>
 
         <p>
           I know, I know, those last three aren't coding languages...but I did
@@ -81,7 +78,7 @@
           in Spanish) but I am hopeful I'll continue to get better!
         </p>
 
-      <h2>But where did I study, you ask?</h2>
+      <h2 class="randomHead">But where did I study, you ask?</h2>
 
         <p>
           Shamelessly, I have gone through my "What if I want to do this..."
@@ -89,6 +86,7 @@
           about.
         </p>
 
+        <div id="schools">
           <ol>
             <li>Ventura Community College-Humanities</li>
             <li>Pierce Community College-American Sign Language</li>
@@ -97,6 +95,7 @@
             <li>Portland State University-Computer Engineering</li>
             <li>Alchemy Code Lab-Coding Bootcamp</li>
           </ol>
+        </div>
 
         <p>
           There is some sense in what seems like madness. There was usually a
@@ -105,7 +104,7 @@
           possible, but I have a love for technology like no other.
         </p>
 
-        <h3>So...where to now?</h3>
+        <h3 class="randomHead">So...where to now?</h3>
 
           <p>
             There are so many things I want to do, especially now that I know
@@ -113,6 +112,7 @@
             near-future goals!
             <p>
 
+          <div id="goals">
             <ul>
               <li>Pass Alchemy Code Lab's BootCamp</li>
               <li>Transition professionally into the Tech Industry</li>
@@ -122,6 +122,7 @@
               <li>Work on starting day/weekend workshops for the kids back home
                   to introduce them to tech</li>
             </ul>
+          </div>
 
         <!-- <h1><script>document.write(newFriend);</script>!</h1> -->
 
@@ -139,18 +140,24 @@
             </div>
           <div id="gameBorder">
             <div id="result"></div>
-            <div id="war"></div>
-            <div id="school"></div>
-            <div id="techy"></div>
-            <div id="bonus"></div>
+            <div class="wrong" id="warWrong"></div>
+            <div class="right" id="warRight"></div>
+            <div class="wrong" id="schoolWrong"></div>
+            <div class="right" id="schoolRight"></div>
+            <div class="wrong" id="techyWrong"></div>
+            <div class="right" id="techyRight"></div>
+            <div class="right" id="bonus"></div>
             <div id="score"></div>
-            <div id="3right"></div>
-            <div id="2right"></div>
-            <div id="1right"></div>
+            <div id="three"></div>
+            <div id="two"></div>
+            <div id="one"></div>
             <!-- <div id="newButton"></div> -->
-
           </div>
+          <img id="mar" src="marmar.gif" alt="Marley and Me!">
      </div>
+
+
+
 
 
     <script type="text/javascript" src="main.js"></script>
