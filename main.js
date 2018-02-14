@@ -13,9 +13,8 @@ function getName() {
 var score = 0
 
 //in the words of SAW..."Let's play a game."
-var playReady;
 function playGame(){
-  playReady = confirm("Now that you've read my page want to play a game to see what you remember?");
+  var playReady = confirm("Now that you've read my page want to play a game to see what you remember?");
   if (!playReady){
     alert("But we're virtual friends now..let's play?"); //...not creepy at all
   } else {
@@ -25,9 +24,8 @@ function playGame(){
 
 
 //Question 1 of game: answer is CANCEL
-var shortWar;
 function getFirst() {
-  shortWar = confirm("Was the shortest war in history 39 minutes?");
+  var shortWar = confirm("Was the shortest war in history 39 minutes?");
   if (shortWar) {
     document.getElementById("warWrong").innerHTML= "Dang, you got question 1 wrong!<br/><img src='wrong.png'>";
   } else {
@@ -39,9 +37,8 @@ function getFirst() {
 
 
 //Question 2 of game: answer is CANCEL
-var firstSchool;
 function getSecond() {
-  firstSchool = confirm("Alchemy Code Lab is the first school I attended since High School?");
+  var firstSchool = confirm("Alchemy Code Lab is the first school I attended since High School?");
   if (firstSchool) {
     document.getElementById("schoolWrong").innerHTML= "Uh oh, you got question 2 wrong!<br/> <img src='wrong.png'><br/>";
   } else {
@@ -52,9 +49,8 @@ function getSecond() {
 
 
 //Question 3 of game: answer is OK
-var techyKids;
 function getThird() {
-  techyKids = confirm("Do I want to do workshops to introduce kids to tech?");
+  var techyKids = confirm("Do I want to do workshops to introduce kids to tech?");
   if (techyKids) {
     document.getElementById("techyRight").innerHTML= "Yeeeah, that's correct!<br/><img src='correct.png'>";
     score++;
