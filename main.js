@@ -16,12 +16,11 @@ var score = 0
 var playReady;
 function playGame(){
   playReady = confirm("Now that you've read my page want to play a game to see what you remember?");
-    if (!playReady){
-    alert("But we're virtual friends now..let's play?");
+  if (!playReady){
+    alert("But we're virtual friends now..let's play?"); //...not creepy at all
   } else {
-    alert("Yay! There's only 3 questions, ready?"); //...not creepy at all
+    alert("Yay! There's only 3 questions, ready?");
   }
-  document.getElementById("result").innerHTML= "Okay, let's see how you did!";
 }
 
 
@@ -29,7 +28,7 @@ function playGame(){
 var shortWar;
 function getFirst() {
   shortWar = confirm("Was the shortest war in history 39 minutes?");
-    if (shortWar) {
+  if (shortWar) {
     document.getElementById("warWrong").innerHTML= "Dang, you got question 1 wrong!<br/><img src='wrong.png'>";
   } else {
     document.getElementById("warRight").innerHTML= "Yay! You got question 1 right!<br/><img src='correct.png'>";
@@ -43,12 +42,12 @@ function getFirst() {
 var firstSchool;
 function getSecond() {
   firstSchool = confirm("Alchemy Code Lab is the first school I attended since High School?");
-    if (firstSchool) {
-      document.getElementById("schoolWrong").innerHTML= "Uh oh, you got question 2 wrong!<br/> <img src='wrong.png'><br/>";
-    } else {
-      document.getElementById("schoolRight").innerHTML= "Question 2 is right!<br/><img src='correct.png'> ";
-      score++;
-    }
+  if (firstSchool) {
+    document.getElementById("schoolWrong").innerHTML= "Uh oh, you got question 2 wrong!<br/> <img src='wrong.png'><br/>";
+  } else {
+    document.getElementById("schoolRight").innerHTML= "Question 2 is right!<br/><img src='correct.png'> ";
+    score++;
+  }
 }
 
 
@@ -56,12 +55,12 @@ function getSecond() {
 var techyKids;
 function getThird() {
   techyKids = confirm("Do I want to do workshops to introduce kids to tech?");
-    if (techyKids) {
-      document.getElementById("techyRight").innerHTML= "Yeeeah, that's correct!<br/><img src='correct.png'>";
-      score++;
-    } else {
-      document.getElementById("techyWrong").innerHTML= "Womp Womp, question 3 is incorrect.<br/> <img src='wrong.png'><br/>";
-    }
+  if (techyKids) {
+    document.getElementById("techyRight").innerHTML= "Yeeeah, that's correct!<br/><img src='correct.png'>";
+    score++;
+  } else {
+    document.getElementById("techyWrong").innerHTML= "Womp Womp, question 3 is incorrect.<br/> <img src='wrong.png'><br/>";
+  }
 }
 
 
@@ -102,13 +101,9 @@ function scoreResponse() {
   } else {
     document.getElementById("one").innerHTML= "1 is better than none!";
   }
+  document.getElementById("result").innerHTML= "Okay, let's see how you did!";
 }
 getName();
-
-// function newButton(){
-//   document.getElementById('newButton').innerHTML = '<input type="button" onClick="funQuestion();" value="One more just for funsies..." />';
-// }
-
 
 
 function startGame() {

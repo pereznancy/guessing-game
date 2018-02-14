@@ -40,6 +40,12 @@ Below is the breakdown of the parts of the assignment.
 - Use a counter to keep track of score
 - Use Logical Operators efficiently
 
-### New Changes 
+### New Changes
 - Re-write code in a modular way, so that I can reuse functionality without duplicating code.
-- Show the user the answers and responses on the web page so we don't have to constantly interact with alerts. 
+- Show the user the answers and responses on the web page so we don't have to constantly interact with alerts.
+
+### Final Changes
+- Add some basic styling to the website.
+- Include images in my game when the user answers the questions.
+- Color code the answers on-screen.
+- Host game online!
