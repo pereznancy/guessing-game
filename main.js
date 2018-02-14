@@ -23,39 +23,16 @@ function playGame(){
 }
 
 
-//Question 1 of game: answer is CANCEL
-function getFirst() {
-  var shortWar = confirm("Was the shortest war in history 39 minutes?");
-  if (shortWar) {
-    document.getElementById("warWrong").innerHTML= "Dang, you got question 1 wrong!<br/><img src='wrong.png'>";
-  } else {
-    document.getElementById("warRight").innerHTML= "Yay! You got question 1 right!<br/><img src='correct.png'>";
-    score++;
-  }
-}
-
-
-
-//Question 2 of game: answer is CANCEL
-function getSecond() {
-  var firstSchool = confirm("Alchemy Code Lab is the first school I attended since High School?");
-  if (firstSchool) {
-    document.getElementById("schoolWrong").innerHTML= "Uh oh, you got question 2 wrong!<br/> <img src='wrong.png'><br/>";
-  } else {
-    document.getElementById("schoolRight").innerHTML= "Question 2 is right!<br/><img src='correct.png'> ";
-    score++;
-  }
-}
-
-
-//Question 3 of game: answer is OK
-function getThird() {
-  var techyKids = confirm("Do I want to do workshops to introduce kids to tech?");
-  if (techyKids) {
-    document.getElementById("techyRight").innerHTML= "Yeeeah, that's correct!<br/><img src='correct.png'>";
+//Generalized function for 3 confirm questions..no checckmarks or red X..sad day
+function askUser(question, validAnswer, correctGuess, wrongGuess, location) {
+  var userGuess = confirm(question);
+  if (userGuess == validAnswer) {
+    document.getElementById(location).setAttribute("class","right");
+    document.getElementById(location).innerHTML = correctGuess;
     score++;
   } else {
-    document.getElementById("techyWrong").innerHTML= "Womp Womp, question 3 is incorrect.<br/> <img src='wrong.png'><br/>";
+    document.getElementById(location).setAttribute("class","wrong");
+    document.getElementById(location).innerHTML= wrongGuess;
   }
 }
 
@@ -101,12 +78,11 @@ function scoreResponse() {
 }
 getName();
 
-
 function startGame() {
   playGame();
-  getFirst();
-  getSecond();
-  getThird();
+  askUser("Was the shortest war in history 39 minutes?", false, "Yay! You got question 1 right!", "Dang, you got question 1 wrong!", "war");
+  askUser("Alchemy Code Lab is the first school I attended since High School?", false, "Question 2 is right!", "Uh oh, you got question 2 wrong!", "school" );
+  askUser("Do I want to do workshops to introduce kids to tech?", true, "Yeeeah, that's correct!", "Womp Womp, question 3 is incorrect", "tech");
   bonus();
   scoreResponse();
 }
